@@ -1,0 +1,73 @@
+Sofias-MacBook-Pro:~ sofiakim$ cd Desktop/
+Sofias-MacBook-Pro:Desktop sofiakim$ mkdir DojoAssignments
+Sofias-MacBook-Pro:Desktop sofiakim$ cd DojoAssignments
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ mkdir WebFundamentals Python MEAN Ruby iOS netCore
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ cd iOS
+Sofias-MacBook-Pro:iOS sofiakim$ touch about.txt
+Sofias-MacBook-Pro:iOS sofiakim$ cd ..
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ cd MEAN
+Sofias-MacBook-Pro:MEAN sofiakim$ touch about.txt
+Sofias-MacBook-Pro:MEAN sofiakim$ cd ..
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ cd netCore
+Sofias-MacBook-Pro:netCore sofiakim$ touch about.txt
+Sofias-MacBook-Pro:netCore sofiakim$ cd ..
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ cd Python
+Sofias-MacBook-Pro:Python sofiakim$ touch about.txt
+Sofias-MacBook-Pro:Python sofiakim$ cd ..
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ cd Ruby
+Sofias-MacBook-Pro:Ruby sofiakim$ touch about.txt
+Sofias-MacBook-Pro:Ruby sofiakim$ cd ..
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ cd WebFundamentals
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ touch about.txt
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ mkdir Git HTML CSS Javascript
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ cd CSS
+Sofias-MacBook-Pro:CSS sofiakim$ touch about.txt
+Sofias-MacBook-Pro:CSS sofiakim$ cd ..
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ cd Git
+Sofias-MacBook-Pro:Git sofiakim$ touch about.txt
+Sofias-MacBook-Pro:Git sofiakim$ cd ..
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ cd HTML
+Sofias-MacBook-Pro:HTML sofiakim$ touch about.txt
+Sofias-MacBook-Pro:HTML sofiakim$ cd ..
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ cd Javascript
+Sofias-MacBook-Pro:Javascript sofiakim$ touch about.txt
+Sofias-MacBook-Pro:Javascript sofiakim$ cd ..
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ cd HTML
+Sofias-MacBook-Pro:HTML sofiakim$ touch indentation.html
+Sofias-MacBook-Pro:HTML sofiakim$ cd ..
+Sofias-MacBook-Pro:WebFundamentals sofiakim$ cd ..
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ ls -R
+MEAN		Ruby		iOS
+Python		WebFundamentals	netCore
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundamentals/CSS:
+about.txt
+
+./WebFundamentals/Git:
+about.txt
+
+./WebFundamentals/HTML:
+about.txt		indentation.html
+
+./WebFundamentals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
+Sofias-MacBook-Pro:DojoAssignments sofiakim$ touch assignments.txt
+Sofias-MacBook-Pro:DojoAssignments sofiakim$

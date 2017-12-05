@@ -1,0 +1,3 @@
+My name is Sofia
+and this is my first time using Git commands
+My favorite book is currently The Wind-Up Bird Chronicles

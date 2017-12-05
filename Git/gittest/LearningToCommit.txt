@@ -1,0 +1,93 @@
+Sofias-MacBook-Pro:~ sofiakim$ cd desktop
+Sofias-MacBook-Pro:desktop sofiakim$ mkdir gittest
+Sofias-MacBook-Pro:desktop sofiakim$ cd gittest
+Sofias-MacBook-Pro:gittest sofiakim$ git init
+Initialized empty Git repository in /Users/sofiakim/Desktop/gittest/.git/
+Sofias-MacBook-Pro:gittest sofiakim$ touch index.html styles.css aboutMe.txt
+Sofias-MacBook-Pro:gittest sofiakim$ git add .
+Sofias-MacBook-Pro:gittest sofiakim$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   aboutMe.txt
+	new file:   index.html
+	new file:   styles.css
+
+Sofias-MacBook-Pro:gittest sofiakim$ git commit -m "initial commit"
+[master (root-commit) 19343fd] initial commit
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Sofias-MacBook-Pro:gittest sofiakim$ atom .
+Sofias-MacBook-Pro:gittest sofiakim$ git add .
+Sofias-MacBook-Pro:gittest sofiakim$ git commit -m "updated aboutMe"
+[master 3a4ef5e] updated aboutMe
+ 1 file changed, 2 insertions(+)
+Sofias-MacBook-Pro:gittest sofiakim$ git add .
+Sofias-MacBook-Pro:gittest sofiakim$ git commit -m "added favorite movie to aboutMe"
+[master 36e28f2] added favorite movie to aboutMe
+ 1 file changed, 1 insertion(+)
+Sofias-MacBook-Pro:gittest sofiakim$ git log
+commit 36e28f2d39fe2c6544f627677421646429fa33d1 (HEAD -> master)
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 01:01:28 2017 -0600
+
+    added favorite movie to aboutMe
+
+commit 3a4ef5e96b54d4e80da4d84ddfbcae4cf0f096f6
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 01:00:35 2017 -0600
+
+    updated aboutMe
+
+commit 19343fd8073b8c32dfbf0740a08fdaa5dc9aef0f
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 00:59:39 2017 -0600
+
+    initial commit
+Sofias-MacBook-Pro:gittest sofiakim$ git revert --no-edit HEAD
+[master 4998f60] Revert "added favorite movie to aboutMe"
+ 1 file changed, 1 deletion(-)
+Sofias-MacBook-Pro:gittest sofiakim$ git add .
+Sofias-MacBook-Pro:gittest sofiakim$ git commit -m "added my favorite book to aboutMe"
+[master fb6bec2] added my favorite book to aboutMe
+ 1 file changed, 1 insertion(+)
+Sofias-MacBook-Pro:gittest sofiakim$ git log
+commit fb6bec26d158464cb0194076660e60abed9ca2ad (HEAD -> master)
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 01:03:00 2017 -0600
+
+    added my favorite book to aboutMe
+
+commit 4998f606143f6c41e473f7db8949add7f130bd12
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 01:01:50 2017 -0600
+
+    Revert "added favorite movie to aboutMe"
+
+    This reverts commit 36e28f2d39fe2c6544f627677421646429fa33d1.
+
+commit 36e28f2d39fe2c6544f627677421646429fa33d1
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 01:01:28 2017 -0600
+
+    added favorite movie to aboutMe
+
+commit 3a4ef5e96b54d4e80da4d84ddfbcae4cf0f096f6
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 01:00:35 2017 -0600
+
+    updated aboutMe
+
+commit 19343fd8073b8c32dfbf0740a08fdaa5dc9aef0f
+Author: sofiajhk <sofiajihyek@gmail.com>
+Date:   Thu Nov 30 00:59:39 2017 -0600
+
+    initial commit
+Sofias-MacBook-Pro:gittest sofiakim$ touch LearningToCommit.txt
+Sofias-MacBook-Pro:gittest sofiakim$

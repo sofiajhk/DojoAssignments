@@ -1,0 +1,24 @@
+Sofias-MacBook-Pro:~ sofiakim$ cd desktop
+Sofias-MacBook-Pro:desktop sofiakim$ cd dojoassignments
+Sofias-MacBook-Pro:dojoassignments sofiakim$ cd webfundamentals
+Sofias-MacBook-Pro:webfundamentals sofiakim$ cd Git
+Sofias-MacBook-Pro:Git sofiakim$ mkdir GitHubRepoAssignment
+Sofias-MacBook-Pro:Git sofiakim$ cd githubrepoassignment
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git init
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ touch readme.md
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ atom .
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git add .
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git status
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git commit -m "added readme text"
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git status
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git remote add origin https://github.com/sofiajhk/GitHubRepoAssignment.git
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git push -u origin master
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git status
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ touch GitHubRepoAssignment.txt
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ atom .
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git add .
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git status
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git commit -m "added GitHubRepoAssignment text outlining how to push to GitHub"
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git status
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$ git push
+Sofias-MacBook-Pro:githubrepoassignment sofiakim$

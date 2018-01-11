@@ -1,0 +1,22 @@
+*{
+    vertical-align: baseline;
+    text-align: center;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#wrapper{
+    width: 820px;
+}
+
+img{
+    width: 200px;
+}
+
+button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(168, 61, 61);
+}

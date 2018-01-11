@@ -1,0 +1,29 @@
+*{
+    vertical-align: baseline;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#wrapper{
+    width: 830px;
+    height: 890px;
+}
+
+.content{
+    outline: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+button{
+    width: 75px;
+    height: 25px;
+    vertical-align: middle;
+    background-color: gray;
+}
+
+.blue{
+    background-color: blue;
+}

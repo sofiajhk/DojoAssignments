@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="jQueryFunction.css">
+    <script type= "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type= "text/javascript">
+    //setting up browser to load before performing functions
+    $(document).ready(function(){
+        //Clicking button to set alert
+        $('.click').click(function(){
+            alert('This is the jQuery Click function');
+        })
+        //hide
+        $('.hide').click(function(){
+            $('#hide p').hide();
+        })
+        //show
+        $('.show').click(function(){
+            $('#show p').show();
+        })
+        //toggle
+        $('.toggle').click(function(){
+            $('#toggle p').toggle();
+        })
+        //slideDown
+        $('.slideDown').click(function(){
+            $('#slideDown p').slideDown("slow");
+        })
+        //slideUp
+        $('.slideUp').click(function(){
+            $('#slideUp p').slideUp("slow");
+        })
+        //slideToggle
+        $('.slideToggle').click(function(){
+            $('#slideToggle p').slideToggle("slow");
+        })
+        //fadeIn
+        $('.fadeIn').click(function(){
+            $('#fadeIn p').fadeIn("slow");
+        })
+        //fadeOut
+        $('.fadeOut').click(function(){
+            $('#fadeOut p').fadeOut("slow");
+        })
+        //addClass
+        $('.addClass').click(function(){
+            $('#addClass').addClass("blue");
+        })
+        //before
+        $('.before').click(function(){
+            $('#before p').before('We are adding content before another (we can also modify styles such as <b>bold</b>)');
+        })
+        //after
+        $('.after').click(function(){
+            $('#after p').after('We are now adding content after another (we are still able to modify styles such as <i>italic</i>)');
+        })
+        //append
+        $('.append').click(function(){
+            $('#append p').append('We are now adding content onto the end of an exisiting element (here we are adding onto the exisiting "p" tag)');
+        })
+        //addClass
+        $('.html').click(function(){
+            $('#html p').html('We jsut modified the existing p content! (we can modify <b>styles</b> with html function as well!)')
+        })
+        //attr
+        $('.attr').click(function(){
+            $('#attr img').attr('src', 'http://www.avatarsdb.com/avatars/gangnam_style_cat.gif')
+        })
+        //val
+        $('.val').click(function(){
+            var text = $(this).text();
+            $('#val input').val(text);
+        })
+        //text
+        $('.text').click(function(){
+            var text2 = $('#text h1').text();
+            $('#text p').text(text2);
+        })
+        //data
+        $('#data p').data('description','storing data and displaying it (refer to html file)');
+        $('.data').click(function(){
+            $('#data p').text($('#data p').data('description'));
+        })
+    });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="click" class="content">
+            <div class="button">
+                <button class="click">Click!</button>
+            </div>
+            <h1>.click</h1>
+            <p>Click the button to set an alert!</p>
+        </div>
+        <div id="hide" class="content">
+            <div class="button">
+                <button class="hide">Click!</button>
+            </div>
+            <h1>.hide</h1>
+            <p>Click the button to hide content.</p>
+        </div>
+        <div id="show" class="content">
+            <div class="button">
+                <button class="show">Click!</button>
+            </div>
+            <h1>.show</h1>
+            <p style="display: none;">Click the button to show content.</p>
+        </div>
+        <div id="toggle" class="content">
+            <div class="button">
+                <button class="toggle">Click!</button>
+            </div>
+            <h1>.toggle</h1>
+            <p>Click the button to toggle between hiding/showing the content.</p>
+        </div>
+        <div id="slideDown" class="content">
+            <div class="button">
+                <button class="slideDown">Click!</button>
+            </div>
+            <h1>.slideDown</h1>
+            <p style="display: none;">Click the button to slide down hidden content.</p>
+        </div>
+        <div id="slideUp" class="content">
+            <div class="button">
+                <button class="slideUp">Click!</button>
+            </div>
+            <h1>.slideUp</h1>
+            <p>Click the button to slide up content.</p>
+        </div>
+        <div id="slideToggle" class="content">
+            <div class="button">
+                <button class="slideToggle">Click!</button>
+            </div>
+            <h1>.slideToggle</h1>
+            <p>Click the button to toggle between sliding up/down the content.</p>
+        </div>
+        <div id="fadeIn" class="content">
+            <div class="button">
+                <button class="fadeIn">Click!</button>
+            </div>
+            <h1>.fadeIn</h1>
+            <p style="display: none;">Click button to fade-in content.</p>
+        </div>
+        <div id="fadeOut" class="content">
+            <div class="button">
+                <button class="fadeOut">Click!</button>
+            </div>
+            <h1>.fadeOut</h1>
+            <p>Click the button to fade-out content.</p>
+        </div>
+        <div id="addClass" class="content">
+            <div class="button">
+                <button class="addClass">Click!</button>
+            </div>
+            <h1>.addClass</h1>
+            <p>Click the button to add a class to the div (add blue background to this div)</p>
+        </div>
+        <div id="before" class="content">
+            <div class="button">
+                <button class="before">Click!</button>
+            </div>
+            <h1>.before</h1>
+            <p>Click button to add content before an existing content.</p>
+        </div>
+        <div id="after" class="content">
+            <div class="button">
+                <button class="after">Click!</button>
+            </div>
+            <h1>.after</h1>
+            <p>Click the button to add content after an existing content.</p>
+        </div>
+        <div id="append" class="content">
+            <div class="button">
+                <button class="append">Click!</button>
+            </div>
+            <h1>.append</h1>
+            <p>Click the button to add content at the end of existing content.</p>
+        </div>
+        <div id="html" class="content">
+            <div class="button">
+                <button class="html">Click!</button>
+            </div>
+            <h1>.html</h1>
+            <p>Click the button to modify existing content.</p>
+        </div>
+        <div id="attr" class="content">
+            <div class="button">
+                <button class="attr">Click!</button>
+            </div>
+            <h1>.attr</h1>
+            <img src="http://www.hondahookup.com/images/100x100.jpg">
+            <p>Click the button to set the value of an attribute (an image in this ex) for the 1st element in the set of matched elements.</p>
+        </div>
+        <div id="val" class="content">
+            <div class="button">
+                <button class="val">Click!</button>
+            </div>
+            <h1>.val</h1>
+            <p>Click the button to change the value of existing content.</p>
+            <input type="text" value="this is the value!">
+        </div>
+        <div id="text" class="content">
+            <div class="button">
+                <button class="text">Click!</button>
+            </div>
+            <h1>.text</h1>
+            <p>Click the button change existing text (change p tag to h1 tag).</p>
+        </div>
+        <div id="data" class="content">
+            <div class="button">
+                <button class="data">Click!</button>
+            </div>
+            <h1>.data</h1>
+            <p>Click the button to change content to value of the function key/attribute.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+*{
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+#wrapper{
+    width: 150px;
+}

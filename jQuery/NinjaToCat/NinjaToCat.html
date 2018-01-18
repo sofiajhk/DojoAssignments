@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja to Cat</title>
+    <link rel="stylesheet" href="NinjaToCat.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        // $('img').click(function(){
+        //     var newImage = $(this).data('alt-src'); //setting a new data source for img
+        //     $(this).data('alt-src', $(this).attr('src')); //setting the src to data-alt-src (this allows you to switch back and forth b/w images)
+        //     $(this).attr('src', newImage);
+        // })
+
+        //alternative method (the temp variable allows you to switch between images)
+        //it is important to THINK OUTSIDE THE BOX such as making an empty variable "tmep"
+        $('img').click(function(){
+            $(this).attr('temp', $(this).attr('src')); //sets an empty variable to src
+            $(this).attr('src', $(this).attr('data-alt-src')); //sets the 'alt-src' as main 'src'
+            $(this).attr('data-alt-src', $(this).attr('temp')); //sets 'temp' (which is now 'src') as 'alt-src'
+        });
+
+    });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <img src='img/ninja0.png' data-alt-src='img/cat0.png' alt=image1 temp=""/>
+        <img src='img/ninja1.png' data-alt-src='img/cat1.png' alt=image2 temp=""/>
+        <img src='img/ninja2.png' data-alt-src='img/cat2.png' alt=image3 temp=""/>
+        <img src='img/ninja3.png' data-alt-src='img/cat3.png' alt=image4 temp=""/>
+        <img src='img/ninja4.png' data-alt-src='img/cat4.png' alt=image5 temp=""/>
+    </div>
+</body>
+</html>

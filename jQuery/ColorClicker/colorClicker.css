@@ -1,0 +1,20 @@
+*{
+    font-family: sans-serif;
+ }
+ h2, h1, h3 {
+    text-align: center;
+ }
+ #large_box {
+    margin: 0px auto;
+    margin-top: 30px;
+    background-color: lightblue;
+    width: 1000px;
+    height: 375px; 
+ }
+ #large_box div {
+    background-color: blue;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    margin: 50px 0px 50px 60px;
+ }

@@ -1,0 +1,31 @@
+#Pokemon_Img{
+    display: inline-block;
+    width: 900px;
+}
+
+#Pokedex{
+    display: inline-block;
+    position: fixed;
+    padding: 10px;
+    margin: 15px;
+    outline: 15px solid rgb(160, 33, 33);
+    width: 330px;
+    height: 500px;
+    text-align: center;
+}
+
+#Pokedex img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+#Pokedex h1, p{
+    text-transform: capitalize;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}

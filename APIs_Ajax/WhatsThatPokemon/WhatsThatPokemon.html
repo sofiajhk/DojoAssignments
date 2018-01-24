@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What's That Pokemon?</title>
+    <link rel="stylesheet" href="WhatsThatPokemon.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        //a loop to post 151 different pokemon images
+        for (var i = 1; i <= 151; i++){
+            $('#Pokemon_Img').append(`<img id="${i}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png"/>`)
+        }
+
+        $(document).on('click', 'img', function(){
+            var id = this.id;
+            var url = "http://pokeapi.co/api/v2/pokemon/";
+            var proxy = "https://cors-anywhere.herokuapp.com/"
+            //api url was not working so had to add proxy!
+
+            $.get(proxy+url+id, function(res){
+                var html_str1=
+                    `
+                    <h1>${res.name}</h1>
+                    <img src="${res.sprites.front_default}">
+                    <h3>Height: ${res.height}</h3>
+                    <h3>Weight: ${res.weight}</h3>
+                    `
+                    //had to create a 2nd html string because "types" needed a "for loop"
+                    //and it didn't fit above format
+                var html_str2="";
+                    html_str2 += "<h3>Types:<h3>";
+                    html_str2 += "<ul>";
+                        for (var k = 0; k < res['types'].length; k++){
+                            html_str2 += "<li>" + res['types'][k]['type']['name'] + "</li>";
+                        };
+                    html_str2 += "</ul>";
+
+                    $('#Pokedex').html(html_str1 + html_str2);        
+            }, "json");
+        });
+    });
+    
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="Pokemon_Img">
+
+        </div>
+        <div id="Pokedex">
+            <h1>Pokedex</h1>
+            <p>click a Pokemon you'd like to learn about!</p>
+        </div>
+    </div>
+</body>
+</html>
